@@ -10,7 +10,7 @@ layout: default
 
 **제작자: Chamiseul**
 
-[🇺🇸 English](./en) | 🇰🇷 한국어
+[🇺🇸 English](./index.md) | 🇰🇷 한국어
 
 ---
 

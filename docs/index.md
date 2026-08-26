@@ -11,7 +11,7 @@ few clicks.
 
 **Author: Chamiseul**
 
-🇺🇸 English | [🇰🇷 한국어](./)
+🇺🇸 English | [🇰🇷 한국어](./KO_index.md)
 
 ---
 
