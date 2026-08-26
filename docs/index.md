@@ -30,7 +30,7 @@ few clicks.
 - ✅ Works as a collider for Blender cloth & hair sims
 - ✅ Bake to keyframes for game-engine export
 
-![Main panel](images/panel_main.png)
+![Main panel](images/motionforge04.png)
 *▲ The NovaBone N-panel — every setting lives in this one place*
 
 ---
