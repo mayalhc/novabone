@@ -50,7 +50,7 @@ few clicks.
 
 ## 🚀 Quick Start (5 minutes)
 
-![Quick start flow](images/quickstart.gif)
+![Quick start flow](assets/quickstart.gif)
 *▲ Select bones → create chains → play. That's it.*
 
 1. Select the armature, enter **Pose Mode**
@@ -148,7 +148,7 @@ NovaSol's collision is no longer a single sphere per bone. Every substep:
 
 ### Procedural Wind
 
-![Wind sim](images/wind.gif)
+![Wind sim](assets/wind.gif)
 *▲ Wind ON + playback = constantly swaying hair*
 
 | Setting | Description |
@@ -176,7 +176,7 @@ produce identical motion at any rig scale.
 
 **Scale presets**: one click on `Blender 1.0` or `Unreal 0.01`.
 
-![Scale presets](images/unit_presets.png)
+![Scale presets](assets/unit_presets.gif)
 *▲ `Median bone length` below shows the auto-detected reference*
 
 ---
@@ -185,7 +185,6 @@ produce identical motion at any rig scale.
 
 ### Bone Prefix — recommended for game rigs
 
-![Prefix chains](images/prefix_chains.png)
 *▲ All dyn_ bones become chains in one click*
 
 1. Enter a prefix in **Prefix** (default `dyn_`)
@@ -208,10 +207,13 @@ produce identical motion at any rig scale.
 | **Chain to Active** | Only bones parented under the active bone |
 | **Individual Bones** | Every selected bone becomes its own chain |
 
+
 > ✅ **Single bone works**: selecting exactly ONE bone and running this
 > creates a 1-bone chain (Start = End = that bone) — no more
 > "No chain created" warning. The active (root) bone is also never
 > silently dropped in Auto mode anymore.
+
+![Chains Selection](assets/Selection.gif)
 
 > 💡 **Many accessories at once**: select all necklace/earring bones and
 > run Auto — each becomes an individual chain, all with physics.
@@ -243,7 +245,7 @@ no rig knowledge needed.
 
 ### Show Bone Shapes ⭐
 
-![Shapers](images/shapes.gif)
+![Shapers](assets/shapes.gif)
 *▲ Capsules span each bone head-to-tail and move with it. Raising Radius grows the diameter*
 
 **Shapers are NOT new bones** — they visualize each bone's collision volume.
@@ -273,7 +275,6 @@ Expand each chain with its `▼` arrow.
 
 ### 🎵 Motion
 
-![Motion comparison](images/motion_compare.gif)
 *▲ Top: Chain (smooth return) / Bottom: Spring (bouncy overshoot)*
 
 | Type | Description |
@@ -342,8 +343,6 @@ Simulates the head point of detached bones (`Use Connect` off) too.
 ---
 
 ## 8️⃣ Bake & Reset
-
-![Bake](images/bake.png)
 
 | Button | Description |
 |---|---|
