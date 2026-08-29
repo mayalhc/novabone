@@ -5,6 +5,8 @@ layout: default
 
 # 🦴 NovaBone Dynamics
 
+![Main panel](assets/NovaBoneB.png)
+
 **뼈 체인 물리 시뮬레이션 애드온** — 머리카락, 꼬리, 스커트, 액세서리, 지글본을
 클릭 몇 번으로 자동 물리 애니메이션으로 만들어 줍니다.
 

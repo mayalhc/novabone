@@ -4,7 +4,9 @@ layout: default
 ---
 
 # 🦴 NovaBone Dynamics
-![Main panel](assets/motionforge04.png)
+
+![Main panel](assets/NovaBoneB.png)
+
 **Bone-chain physics simulation add-on** — turn hair, tails, skirts,
 accessories and jiggle bones into automatic physics animation with a
 few clicks.
