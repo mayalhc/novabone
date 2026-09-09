@@ -29,7 +29,7 @@ layout: default
 - ✅ Blender 클로스/헤어 시뮬레이션 충돌체 연동
 - ✅ 게임 엔진 반출용 베이크
 
-![메인 패널](images/panel_main.png)
+![메인 패널](assets/panel_main.png)
 *▲ N패널의 NovaBone 메인 패널 — 모든 설정이 이 한 곳에 모여 있습니다*
 
 ---
@@ -172,7 +172,7 @@ NovaSol의 충돌은 더 이상 뼈당 구 1개가 아닙니다. 매 서브스�
 
 **스케일 프리셋**: `Blender 1.0` / `Unreal 0.01` 버튼 한 번 클릭으로 끝.
 
-![스케일 프리셋](images/unit_presets.png)
+![스케일 프리셋](assets/unit_presets.png)
 *▲ 아래 표시되는 `Median bone length`가 자동 감지된 기준값입니다*
 
 ---
@@ -181,7 +181,7 @@ NovaSol의 충돌은 더 이상 뼈당 구 1개가 아닙니다. 매 서브스�
 
 ### Bone Prefix (접두사) — 게임 릭 추천
 
-![접두사 체인](images/prefix_chains.png)
+![접두사 체인](assets/prefix_chains.png)
 *▲ dyn_ 뼈들이 한 번에 체인화됩니다*
 
 1. **Prefix**에 접두사 입력 (기본 `dyn_`)
@@ -269,7 +269,7 @@ NovaSol의 충돌은 더 이상 뼈당 구 1개가 아닙니다. 매 서브스�
 
 ### 🎵 Motion (움직임 타입)
 
-<video src="images/motion_compare.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="모션 비교"></video>
+<video src="assets/motion_compare.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="모션 비교"></video>
 *▲ 위: Chain(부드럽게 복귀) / 아래: Spring(통통 출렁이며 복귀)*
 
 | Type | 설명 |
@@ -336,7 +336,7 @@ NovaSol의 충돌은 더 이상 뼈당 구 1개가 아닙니다. 매 서브스�
 
 ## 8️⃣ Bake & Reset
 
-![베이크](images/bake.png)
+![베이크](assets/bake.png)
 
 | 버튼 | 설명 |
 |---|---|
