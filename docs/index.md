@@ -52,7 +52,7 @@ few clicks.
 
 ## 🚀 Quick Start (5 minutes)
 
-![Quick start flow](assets/quickstart.gif)
+<video src="assets/quickstart.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="Quick start flow"></video>
 *▲ Select bones → create chains → play. That's it.*
 
 1. Select the armature, enter **Pose Mode**
@@ -150,7 +150,7 @@ NovaSol's collision is no longer a single sphere per bone. Every substep:
 
 ### Procedural Wind
 
-![Wind sim](assets/wind.gif)
+<video src="assets/wind.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="Wind sim"></video>
 *▲ Wind ON + playback = constantly swaying hair*
 
 | Setting | Description |
@@ -178,7 +178,7 @@ produce identical motion at any rig scale.
 
 **Scale presets**: one click on `Blender 1.0` or `Unreal 0.01`.
 
-![Scale presets](assets/unit_presets.gif)
+<video src="assets/unit_presets.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="Scale presets"></video>
 *▲ `Median bone length` below shows the auto-detected reference*
 
 ---
@@ -215,7 +215,7 @@ produce identical motion at any rig scale.
 > "No chain created" warning. The active (root) bone is also never
 > silently dropped in Auto mode anymore.
 
-![Chains Selection](assets/Selection.gif)
+<video src="assets/Selection.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="Chains Selection"></video>
 
 > 💡 **Many accessories at once**: select all necklace/earring bones and
 > run Auto — each becomes an individual chain, all with physics.
@@ -247,7 +247,7 @@ no rig knowledge needed.
 
 ### Show Bone Shapes ⭐
 
-![Shapers](assets/shapes.gif)
+<video src="assets/shapes.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="Shapers"></video>
 *▲ Capsules span each bone head-to-tail and move with it. Raising Radius grows the diameter*
 
 **Shapers are NOT new bones** — they visualize each bone's collision volume.
@@ -313,7 +313,7 @@ Expand each chain with its `▼` arrow.
 
 ### ⚙️ Collision Engine
 
-![Collision demo](images/collision_demo.gif)
+<video src="assets/collision_demo.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="Collision demo"></video>
 *▲ NovaSol collision: moving the arm pushes the hair away from the body*
 
 | Engine | Description |

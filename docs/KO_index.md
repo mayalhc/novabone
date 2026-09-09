@@ -49,7 +49,7 @@ layout: default
 
 ## 🚀 5분 안에 따라하기 (Quick Start)
 
-![퀵스타트 흐름](images/quickstart.gif)
+<video src="assets/quickstart.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="퀵스타트 흐름"></video>
 *▲ 뼈 선택 → 체인 생성 → 재생. 이게 전부입니다.*
 
 1. 아머처 선택 후 **포즈 모드** 진입
@@ -145,7 +145,7 @@ NovaSol의 충돌은 더 이상 뼈당 구 1개가 아닙니다. 매 서브스�
 
 ### Procedural Wind (내장 바람)
 
-![바람 시뮬](images/wind.gif)
+<video src="assets/wind.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="바람 시뮬"></video>
 *▲ 바람 ON + 재생만으로 머리카락이 계속 살랑입니다*
 
 | 항목 | 설명 |
@@ -239,7 +239,7 @@ NovaSol의 충돌은 더 이상 뼈당 구 1개가 아닙니다. 매 서브스�
 
 ### Show Bone Shapes — 충돌 셰이퍼 ⭐
 
-![셰이퍼 표시](images/shapes.gif)
+<video src="assets/shapes.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="셰이퍼 표시"></video>
 *▲ 캡슐이 본 헤드~테일에 정확히 걸쳐서 함께 움직입니다. Radius를 올리면 지름이 커집니다*
 
 **셰이퍼는 새 뼈가 아닙니다.** 뼈의 충돌 범위를 **눈으로 보여주는 시각화 메쉬**입니다.
@@ -269,7 +269,7 @@ NovaSol의 충돌은 더 이상 뼈당 구 1개가 아닙니다. 매 서브스�
 
 ### 🎵 Motion (움직임 타입)
 
-![모션 비교](images/motion_compare.gif)
+<video src="images/motion_compare.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="모션 비교"></video>
 *▲ 위: Chain(부드럽게 복귀) / 아래: Spring(통통 출렁이며 복귀)*
 
 | Type | 설명 |
@@ -306,7 +306,7 @@ NovaSol의 충돌은 더 이상 뼈당 구 1개가 아닙니다. 매 서브스�
 
 ### ⚙️ Collision Engine
 
-![충돌 데모](images/collision_demo.gif)
+<video src="assets/collision_demo.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="충돌 데모"></video>
 *▲ NovaSol 충돌: 팔을 움직이면 머리카락이 몸에서 밀려납니다*
 
 | Engine | 설명 |
