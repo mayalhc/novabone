@@ -4,9 +4,7 @@ layout: default
 ---
 
 # 🦴 NovaBone Dynamics
-
-![Main panel](assets/NovaBoneB.png)
-
+![Main panel](assets/motionforge04.png)
 **Bone-chain physics simulation add-on** — turn hair, tails, skirts,
 accessories and jiggle bones into automatic physics animation with a
 few clicks.
@@ -14,6 +12,74 @@ few clicks.
 **Author: Chamiseul**
 
 🇺🇸 English | [🇰🇷 한국어](./KO_index.md)
+
+---
+
+## 🆕 What's New in v1.1.0
+
+**Bones no longer pop when they hit a collider** — the jolt that showed up
+worst on the last bones of a chain. There were four separate causes, and
+all four are fixed.
+
+### The push was leaking into velocity
+
+When a collision pushed a bone back out of a surface, that push was counted
+as if the bone had **travelled there under its own power**, and turned into
+velocity. Because it was divided by a single substep, even a tiny correction
+came back as a large speed.
+
+The symptom was distinctive: raising **Substeps made it worse**, not better
+(4 → 8 → 16 → 32 each roughly doubled the jolt). Refining the solve should
+never do that. Now the push only fixes position, and momentum is handled
+once, by bounce and friction.
+
+A welcome side effect: **Friction does its actual job again.** Setting it to
+0 used to make the simulation 20x rougher — not because the hair needed
+friction, but because friction was the only thing scrubbing off this
+injected speed. Set it for the feel you want now.
+
+### Kink relief was undoing the collision
+
+The anti-kink pass that straightens zig-zags in a chain ran **after**
+collision and re-checked nothing, so it blended resting bones back toward
+their neighbours — which meant back **into** the collider. The next substep
+pushed them out again. That push-pull loop, repeating every substep, was
+the popping.
+
+Bones that are **in contact are now left where the collision put them.**
+Free-hanging bones still get the kink relief.
+
+### Push direction
+
+Depth was measured to the closest point on the surface, but the push
+**direction** came from the nearest triangle's face normal — two different
+references. A face normal is a step function: it jumps the moment a
+different triangle becomes nearest. Measured while sliding along a
+collider, it swung up to 22.5° in a single step where the closest-point
+direction moved 1.1°. Subdividing the collider does not fix it, because the
+discontinuity sits at every face boundary regardless of face size.
+
+Depth and direction now come from the same place.
+
+### Deforming colliders
+
+The biggest one. A collider that **deforms** — a character mesh driven by an
+armature and shape keys — moves its vertices while the object itself stays
+put, so the simulation believed the surface was **standing still**. It would
+push a bone clear, the surface would move into it again, and it would push
+again, frame after frame.
+
+The surface is now measured where it is actually touched: the face that
+answered the collision, compared against its own position last frame.
+
+### Also
+
+- Removed the add-on preferences panel. It held one checkbox that
+  did nothing and one internal safety value there was no reason to
+  touch; the latter is now a constant in the code.
+
+> 💡 No new settings. Existing scenes open unchanged, and scenes whose
+> colliders do not move produce identical results.
 
 ---
 
@@ -52,7 +118,7 @@ few clicks.
 
 ## 🚀 Quick Start (5 minutes)
 
-<video src="assets/quickstart.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="Quick start flow"></video>
+![Quick start flow](images/quickstart.gif)
 *▲ Select bones → create chains → play. That's it.*
 
 1. Select the armature, enter **Pose Mode**
@@ -127,7 +193,9 @@ NovaSol's collision is no longer a single sphere per bone. Every substep:
    surface over a few frames instead.
 5. **Anti-kink** — after contacts resolve, each interior bone relaxes
    15% toward its neighbours' average direction (Chain mode only), which
-   smooths the zig-zag a draped chain would otherwise keep.
+   smooths the zig-zag a draped chain would otherwise keep. Bones that
+   are **in contact are skipped**, so this cannot undo the pose the
+   collision just settled (v1.1.0).
 6. **Residual re-check** — any bone whose round was clamped or truncated
    gets one extra query + a small outward push so the round always ends
    OUTSIDE the surface. Clean frames pay none of this cost.
@@ -150,7 +218,7 @@ NovaSol's collision is no longer a single sphere per bone. Every substep:
 
 ### Procedural Wind
 
-<video src="assets/wind.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="Wind sim"></video>
+![Wind sim](images/wind.gif)
 *▲ Wind ON + playback = constantly swaying hair*
 
 | Setting | Description |
@@ -178,7 +246,7 @@ produce identical motion at any rig scale.
 
 **Scale presets**: one click on `Blender 1.0` or `Unreal 0.01`.
 
-<video src="assets/unit_presets.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="Scale presets"></video>
+![Scale presets](images/unit_presets.png)
 *▲ `Median bone length` below shows the auto-detected reference*
 
 ---
@@ -187,6 +255,7 @@ produce identical motion at any rig scale.
 
 ### Bone Prefix — recommended for game rigs
 
+![Prefix chains](images/prefix_chains.png)
 *▲ All dyn_ bones become chains in one click*
 
 1. Enter a prefix in **Prefix** (default `dyn_`)
@@ -209,13 +278,10 @@ produce identical motion at any rig scale.
 | **Chain to Active** | Only bones parented under the active bone |
 | **Individual Bones** | Every selected bone becomes its own chain |
 
-
 > ✅ **Single bone works**: selecting exactly ONE bone and running this
 > creates a 1-bone chain (Start = End = that bone) — no more
 > "No chain created" warning. The active (root) bone is also never
 > silently dropped in Auto mode anymore.
-
-<video src="assets/Selection.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="Chains Selection"></video>
 
 > 💡 **Many accessories at once**: select all necklace/earring bones and
 > run Auto — each becomes an individual chain, all with physics.
@@ -247,7 +313,7 @@ no rig knowledge needed.
 
 ### Show Bone Shapes ⭐
 
-<video src="assets/shapes.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="Shapers"></video>
+![Shapers](images/shapes.gif)
 *▲ Capsules span each bone head-to-tail and move with it. Raising Radius grows the diameter*
 
 **Shapers are NOT new bones** — they visualize each bone's collision volume.
@@ -277,6 +343,7 @@ Expand each chain with its `▼` arrow.
 
 ### 🎵 Motion
 
+![Motion comparison](images/motion_compare.gif)
 *▲ Top: Chain (smooth return) / Bottom: Spring (bouncy overshoot)*
 
 | Type | Description |
@@ -313,7 +380,7 @@ Expand each chain with its `▼` arrow.
 
 ### ⚙️ Collision Engine
 
-<video src="assets/collision_demo.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="Collision demo"></video>
+![Collision demo](images/collision_demo.gif)
 *▲ NovaSol collision: moving the arm pushes the hair away from the body*
 
 | Engine | Description |
@@ -345,6 +412,8 @@ Simulates the head point of detached bones (`Use Connect` off) too.
 ---
 
 ## 8️⃣ Bake & Reset
+
+![Bake](images/bake.png)
 
 | Button | Description |
 |---|---|
