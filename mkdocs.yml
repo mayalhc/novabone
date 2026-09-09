@@ -32,7 +32,7 @@ extra_css:
 nav:
   - NovaBone Guide:
     - "Welcome to NovaBone": index.md # 상위 메뉴 클릭 시 바로 보일 파일
-    - "Strategy & Pipeline": integration.md
+    - "All add-ons & guides": https://mayalhc.github.io/GroomForge-Wiki/
 #   - "Workflow": workflow.md
 #   - "Technical Manual": technical.md
 #   - "Troubleshooting (FAQ)": faq.md
