@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="chamiseul" /><link rel="canonical" href="http://127.0.0/KO_index/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>NovaBone Dynamics - NovaBone_Wiki</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "NovaBone Dynamics";
+        var mkdocs_page_input_path = "KO_index.md";
+        var mkdocs_page_url = "/KO_index/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> NovaBone_Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">NovaBone Guide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="..">Welcome to NovaBone</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="..#whats-new-in-v110">🆕 What's New in v1.1.0</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="..#the-push-was-leaking-into-velocity">The push was leaking into velocity</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="..#kink-relief-was-undoing-the-collision">Kink relief was undoing the collision</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="..#push-direction">Push direction</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="..#deforming-colliders">Deforming colliders</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="..#also">Also</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#features">✨ Features</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#installation">📥 Installation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#quick-start-5-minutes">🚀 Quick Start (5 minutes)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#panel-layout">🧭 Panel Layout</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#1-novabone-enabled">1️⃣ NovaBone Enabled</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#2-novasol-solver">2️⃣ NovaSol Solver</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="..#collision-precision-engine-v100">🎯 Collision precision engine (v1.0.0)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#3-forces">3️⃣ Forces</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="..#gravity">Gravity</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="..#procedural-wind">Procedural Wind</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#4-unit-normalization">4️⃣ Unit Normalization ⭐</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#5-setup-tools">5️⃣ Setup Tools</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="..#bone-prefix-recommended-for-game-rigs">Bone Prefix — recommended for game rigs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="..#chains-from-selection">Chains from Selection</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="..#detect-chains-automatically">Detect Chains Automatically</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#6-armature-section">6️⃣ Armature Section</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="..#show-bone-shapes">Show Bone Shapes ⭐</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#7-chains">7️⃣ Chains</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="..#motion">🎵 Motion</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="..#limits">📐 Limits</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="..#bone-collision-shape">🥚 Bone Collision Shape</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="..#collision-engine">⚙️ Collision Engine</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="..#floating-head">🎈 Floating Head</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#8-bake-reset">8️⃣ Bake &amp; Reset</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#presets">🎨 Presets</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#recipes">📋 Recipes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#troubleshooting">🔧 Troubleshooting</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#faq">❓ FAQ</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#license">📜 License</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="https://mayalhc.github.io/GroomForge-Wiki/">All add-ons & guides</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">NovaBone_Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">NovaBone Dynamics</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="novabone-dynamics">🦴 NovaBone Dynamics</h1>
+<p><strong>뼈 체인 물리 시뮬레이션 애드온</strong> — 머리카락, 꼬리, 스커트, 액세서리, 지글본을
+클릭 몇 번으로 자동 물리 애니메이션으로 만들어 줍니다.</p>
+<p><strong>제작자: Chamiseul</strong></p>
+<p><a href="../">🇺🇸 English</a> | 🇰🇷 한국어</p>
+<hr />
+<h2 id="v110">🆕 v1.1.0 릴리즈 노트</h2>
+<p><strong>충돌할 때 뼈가 툭툭 튀던 현상을 잡았습니다.</strong> 특히 체인 끝쪽 뼈에서
+심하게 나타나던 문제입니다. 원인이 네 가지였고, 전부 수정했습니다.</p>
+<h3 id="_1">밀어내기가 속도로 새던 문제</h3>
+<p>충돌로 뼈를 표면 밖으로 밀어내면, 그 밀어낸 거리가 <strong>뼈가 스스로 이동한
+것처럼</strong> 속도로 환산되고 있었습니다. 서브스텝 하나를 기준으로 나누다 보니
+아주 작은 보정도 큰 속도로 부풀었습니다.</p>
+<p>증상이 뚜렷했습니다 — Substeps를 <strong>올릴수록 오히려 더 튀었습니다</strong>
+(4 → 8 → 16 → 32 으로 갈수록 악화). 이제 밀어내기는 위치만 고치고,
+운동량은 반발·마찰이 한 번만 처리합니다.</p>
+<p>부수 효과로 <strong>Friction이 제 역할을 되찾았습니다.</strong> 예전에는 Friction을
+0으로 두면 시뮬레이션이 20배 거칠어졌는데, 그건 마찰이 아니라 이 가짜
+속도를 지워주고 있었기 때문입니다. 이제 Friction은 원하는 질감대로
+쓰시면 됩니다.</p>
+<h3 id="_2">킹크 완화가 충돌 해결을 되돌리던 문제</h3>
+<p>체인의 지그재그를 펴주는 안티킹크 보정이 충돌 처리 <strong>뒤에</strong> 실행되면서,
+표면에 닿아 있는 뼈를 이웃 방향으로 섞어 <strong>콜라이더 안쪽으로 다시</strong>
+밀어넣고 있었습니다. 다음 서브스텝이 또 밀어내고, 그게 반복되는 밀당이
+바로 "툭툭"이었습니다.</p>
+<p>이제 <strong>접촉 중인 뼈는 건드리지 않습니다.</strong> 공중에 떠 있는 뼈는 예전처럼
+킹크 완화를 받습니다.</p>
+<h3 id="_3">밀어내는 방향</h3>
+<p>깊이는 표면의 최근접점 기준으로 재면서, 미는 <strong>방향</strong>은 삼각형의 면법선을
+쓰고 있어 둘이 어긋나 있었습니다. 면법선은 어느 삼각형이 가장 가까운지가
+바뀌는 순간 계단처럼 튑니다 — 측정해 보니 한 스텝에 최대 22.5°까지
+꺾였습니다(최근접점 기준은 1.1°). 콜라이더를 세분화해도 사라지지 않습니다.
+면의 경계마다 생기는 문제라 면 크기와 무관하기 때문입니다.</p>
+<p>이제 깊이와 방향을 같은 기준으로 계산합니다.</p>
+<h3 id="_4">변형되는 콜라이더</h3>
+<p>캐릭터 메쉬처럼 <strong>아마츄어나 셰이프키로 변형되는</strong> 콜라이더가 가장 큰
+문제였습니다. 이런 메쉬는 정점만 움직이고 오브젝트 자체는 제자리에 있어서,
+시뮬레이션이 <strong>표면이 멈춰 있다고 착각</strong>했습니다. 그래서 밀어낸 자리에
+표면이 또 들어오고, 다시 밀어내기를 반복했습니다.</p>
+<p>이제 실제로 부딪힌 면이 지난 프레임 대비 얼마나 움직였는지 측정해서,
+그 표면을 기준으로 접촉을 해결합니다.</p>
+<h3 id="_5">그 외</h3>
+<ul>
+<li>애드온 환경설정 패널을 없앴습니다. 안에 있던 항목은 아무 동작도
+  하지 않는 체크박스 하나와, 사용자가 만질 이유가 없는 내부
+  안전값 하나뿐이었습니다. 후자는 코드 상수로 옮겼습니다.</li>
+</ul>
+<blockquote>
+<p>💡 새로 생긴 설정은 없습니다. 기존 씬은 그대로 열리며, 움직이지 않는
+콜라이더를 쓰는 씬은 결과가 동일합니다.</p>
+</blockquote>
+<hr />
+<h2 id="_6">✨ 주요 기능</h2>
+<ul>
+<li>✅ 체인 시작~끝만 지정하면 자동 시뮬레이션</li>
+<li>✅ 스케일 독립 — 블렌더 릭(1.0)도 언리얼 릭(0.01)도 같은 값으로 동일한 움직임</li>
+<li>✅ 충돌 셰이퍼를 눈으로 보면서 튜닝</li>
+<li>✅ <strong>형태 정밀 충돌</strong>: Capsule / Cylinder / Box가 단순 표시가 아니라
+  실제 볼륨으로 충돌 계산 (멀티 접촉 + 스윕 CCD 터널링 방지)</li>
+<li>✅ <strong>안정적인 접촉</strong>: 안티폴드(뼈가 뒤집혀 접히는 현상 차단) +
+  안티킹크(드레이프 체인의 지그재그 자동 완화)</li>
+<li>✅ 체인 모드 + 스프링(지글본) 모드</li>
+<li>✅ Blender 클로스/헤어 시뮬레이션 충돌체 연동</li>
+<li>✅ 게임 엔진 반출용 베이크</li>
+</ul>
+<p><img alt="메인 패널" src="images/panel_main.png" />
+<em>▲ N패널의 NovaBone 메인 패널 — 모든 설정이 이 한 곳에 모여 있습니다</em></p>
+<hr />
+<h2 id="_7">📥 설치</h2>
+<ol>
+<li><code>novabone</code> 폴더 안의 <strong>파일들을 선택해서</strong> zip으로 압축<blockquote>
+<p>⚠️ 폴더째 압축하지 마세요. <code>blender_manifest.toml</code>이 zip 최상위에 있어야 합니다.</p>
+</blockquote>
+</li>
+<li>Blender → <code>Edit &gt; Preferences &gt; Get Extensions</code></li>
+<li>오른쪽 위 <code>▼</code> → <strong>Install from Disk</strong> → zip 선택</li>
+<li>설치된 NovaBone을 <strong>Enable(활성화)</strong></li>
+<li>3D 뷰포트에서 <code>N</code> 키 → <strong>NovaBone</strong> 탭이 생깁니다</li>
+</ol>
+<p><strong>지원 버전</strong>: Blender 4.2 이상 (5.0 / 5.2 LTS 테스트 완료)</p>
+<hr />
+<h2 id="5-quick-start">🚀 5분 안에 따라하기 (Quick Start)</h2>
+<video src="../assets/quickstart.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="퀵스타트 흐름"></video>
+<p><em>▲ 뼈 선택 → 체인 생성 → 재생. 이게 전부입니다.</em></p>
+<ol>
+<li>아머처 선택 후 <strong>포즈 모드</strong> 진입</li>
+<li>물리를 넣고 싶은 뼈들을 전부 선택
+   (연결된 꼬리라면: <strong>뿌리 뼈를 마지막에 클릭</strong>, 나머지는 Shift+클릭)</li>
+<li>N패널 → <strong>Setup Tools</strong> → <code>Chains from Selection</code> 클릭</li>
+<li>뼈가 살짝 늘어지면 성공! <strong>스페이스바</strong>로 재생</li>
+<li>몸 뼈를 움직이면 체인이 물리적으로 따라 흔들립니다 🎉</li>
+</ol>
+<blockquote>
+<p>💡 <strong>Shake &amp; Play</strong> 버튼은 뼈를 흔들고 + 재생까지 자동으로 시작합니다.
+출렁이면 엔진 정상입니다.</p>
+</blockquote>
+<hr />
+<h2 id="_8">🧭 패널 구조</h2>
+<table>
+<thead>
+<tr>
+<th>섹션</th>
+<th>역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>NovaBone Enabled</strong></td>
+<td>애드온 전체 스위치</td>
+</tr>
+<tr>
+<td><strong>NovaSol Solver</strong></td>
+<td>물리 품질·테스트 도구</td>
+</tr>
+<tr>
+<td><strong>Forces</strong></td>
+<td>중력·바람</td>
+</tr>
+<tr>
+<td><strong>Unit Normalization</strong></td>
+<td>릭 스케일 보정</td>
+</tr>
+<tr>
+<td><strong>Setup Tools</strong></td>
+<td>체인 만들기</td>
+</tr>
+<tr>
+<td><strong>Armature</strong></td>
+<td>오브젝트별 설정</td>
+</tr>
+<tr>
+<td><strong>Chains</strong></td>
+<td>체인별 상세 물리</td>
+</tr>
+<tr>
+<td><strong>Bake &amp; Reset</strong></td>
+<td>베이크·리셋</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-novabone-enabled">1️⃣ NovaBone Enabled</h2>
+<p>가장 위의 큰 버튼. <strong>ON이어야 물리가 작동합니다.</strong> 체인 생성 시 자동 ON.
+OFF면 물리가 멈추고 애니메이션 원본대로 재생됩니다.</p>
+<hr />
+<h2 id="2-novasol-solver">2️⃣ NovaSol Solver (물리 품질)</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+<th>권장값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Substeps</strong></td>
+<td>프레임 1장을 몇 조각으로 나눠 계산. 높을수록 부드럽고 단단하고 <strong>충돌 아티팩트도 줄어듦</strong></td>
+<td>8 (접촉 많거나 빠른 장면 10~16)</td>
+</tr>
+<tr>
+<td><strong>Iterations</strong></td>
+<td>제약(길이·각도) 반복 계산 횟수</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>Time Scale</strong></td>
+<td>물리 시간 속도 (2 = 두 배 빠름, 0.5 = 슬로모션)</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>버튼</th>
+<th>역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Simulate 1 Step</strong></td>
+<td>현재 프레임에서 딱 1프레임만 진행 (미세 확인)</td>
+</tr>
+<tr>
+<td><strong>Shake &amp; Play</strong></td>
+<td>뼈를 랜덤하게 흔들고 <strong>자동 재생 시작</strong>. 재생 중 다시 누르면 정지</td>
+</tr>
+<tr>
+<td><strong>Diagnostics</strong></td>
+<td>엔진 상태·숨은 오류 표시. <strong>문제 발생 시 가장 먼저 클릭</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ 물리는 <strong>프레임이 바뀔 때</strong> 계산됩니다. 정지 상태에서 안 움직이는 건 정상입니다.</p>
+</blockquote>
+<h3 id="v100">🎯 충돌 정밀 엔진 (v1.0.0)</h3>
+<p>NovaSol의 충돌은 더 이상 뼈당 구 1개가 아닙니다. 매 서브스텝마다:</p>
+<ol>
+<li><strong>볼륨 프로빙</strong> — 체인에서 고른 Shape(Capsule / Cylinder / Box)를
+   <strong>실제 볼륨</strong> 따라 제한된 수의 구 프로브로 샘플링합니다: 캡슐은 척추선,
+   실린더는 측면 링, 박스는 모서리 오프셋까지. 뼈 중간이 벽을 비집고
+   지나가던 누수와 "Box인데 둥글게 밀려나던" 문제가 사라졌습니다.</li>
+<li><strong>멀티 접촉</strong> — 서로 다른 최대 3개 접촉(법선이 60° 이상 차이)을 동시
+   해결: 가장 깊은 접촉은 100%, 나머지는 60% 강도로 밀어냅니다. 모서리에
+   걸친 뼈가 한쪽 벽에서만 떨리지 않고 양쪽 모두에 안착됩니다.</li>
+<li><strong>스윕 CCD</strong> — 한 서브스텝에 충돌 반경의 절반 이상 이동한 뼈는
+   <strong>이동 경로 자체</strong>를 검사해 마지막 안전 지점으로 되돌립니다. 빠른
+   휘두름이 얇은 판을 순간 통과하는 터널링이 잡힙니다.</li>
+<li><strong>안티폴드</strong> — 모든 접촉 보정에는 예산이 있습니다(라운드당 뼈 길이의
+   최대 75%) + 방향 클램프(라운드당 최대 45°). 뼈가 한 번에 뒤집혀
+   접히는 것은 구조적으로 불가능하며, 대신 몇 프레임에 걸쳐 표면을
+   미끄러져 내려갑니다.</li>
+<li><strong>안티킹크</strong> — 접촉 해결 후, 체인 중간 뼈들의 방향을 이웃 뼈 평균
+   방향으로 15%씩 완만히 혼합(Chain 모드만)합니다. 구 위에 드레이프된
+   체인의 지그재그 꺽임이 몇 프레임 안에 자연스럽게 펴집니다.
+   <strong>표면에 닿아 있는 뼈는 제외</strong>됩니다 — 충돌로 잡아준 자세를 다시
+   흐트러뜨리지 않기 위해서입니다(v1.1.0).</li>
+<li><strong>잔여 재검사</strong> — 클램프/예산 절단이 발동한 뼈만(평시엔 0회) 충돌
+   라운드 끝에 쿼리 1회 + 작은 외부 밀어냄을 추가해, 라운드가 항상
+   표면 <strong>바깥에서</strong> 끝나도록 보장합니다.</li>
+</ol>
+<blockquote>
+<p>💡 전부 자동입니다 — 새 슬라이더 없음. 패널 하단 <code>Solve xx ms</code>가
+오르면 Substeps를 먼저 낮추세요. 프로브 밀도가 좋아져서 예전만큼
+Substeps가 필요 없습니다.</p>
+</blockquote>
+<hr />
+<h2 id="3-forces">3️⃣ Forces (중력·바람)</h2>
+<h3 id="gravity">Gravity</h3>
+<table>
+<thead>
+<tr>
+<th>모드</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Custom (Normalized)</strong></td>
+<td>기본. 벡터 직접 입력 (기본 0,0,-9.81). 스케일 무관 동일 느낌</td>
+</tr>
+<tr>
+<td><strong>Scene Gravity</strong></td>
+<td>씬 중력 설정 사용</td>
+</tr>
+<tr>
+<td><strong>Zero</strong></td>
+<td>무중력</td>
+</tr>
+</tbody>
+</table>
+<h3 id="procedural-wind">Procedural Wind (내장 바람)</h3>
+<video src="../assets/wind.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="바람 시뮬"></video>
+<p><em>▲ 바람 ON + 재생만으로 머리카락이 계속 살랑입니다</em></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Strength</strong></td>
+<td>바람 세기 (6~10이면 확실히 보임)</td>
+</tr>
+<tr>
+<td><strong>Direction</strong></td>
+<td>바람 방향</td>
+</tr>
+<tr>
+<td><strong>Turbulence</strong></td>
+<td>난기류 — 높을수록 랜덤 출렁임</td>
+</tr>
+<tr>
+<td><strong>Noise Scale</strong></td>
+<td>패턴 크기. 낮으면 큰 물결, 높으면 잘게</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 재생만으로 지속 움직임을 원하면 바람을 켜세요.</p>
+</blockquote>
+<hr />
+<h2 id="4-unit-normalization">4️⃣ Unit Normalization ⭐ (스케일 문제 해결)</h2>
+<p><strong>"블렌더 릭은 뼈 길이 1.0, 언리얼 임포트는 0.01이라 같은 값이 안 먹는다"</strong>
+는 고질 문제의 해결 기능. 모든 물리량을 <strong>기준 뼈 길이(L)로 나눈 정규화
+공간</strong>에서 계산하므로 같은 값 = 어떤 스케일에서든 동일한 움직임.</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Auto Detect</strong></td>
+<td>기본. 체인 뼈 길이 중간값을 자동 기준으로 사용. <strong>대부분 이대로면 끝</strong></td>
+</tr>
+<tr>
+<td><strong>Manual</strong></td>
+<td>기준 길이 직접 입력</td>
+</tr>
+</tbody>
+</table>
+<p><strong>스케일 프리셋</strong>: <code>Blender 1.0</code> / <code>Unreal 0.01</code> 버튼 한 번 클릭으로 끝.</p>
+<video src="../assets/unit_presets.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="스케일 프리셋"></video>
+<p><em>▲ 아래 표시되는 <code>Median bone length</code>가 자동 감지된 기준값입니다</em></p>
+<hr />
+<h2 id="5-setup-tools">5️⃣ Setup Tools (체인 만들기)</h2>
+<h3 id="bone-prefix">Bone Prefix (접두사) — 게임 릭 추천</h3>
+<p><img alt="접두사 체인" src="images/prefix_chains.png" />
+<em>▲ dyn_ 뼈들이 한 번에 체인화됩니다</em></p>
+<ol>
+<li><strong>Prefix</strong>에 접두사 입력 (기본 <code>dyn_</code>)</li>
+<li><strong>Chains from Prefix</strong> 클릭</li>
+<li>접두사 뼈 전부 자동 체인화</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>동작</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Group Chains</strong></td>
+<td>연결된 dyn_ 뼈들은 하나의 체인으로 (권장)</td>
+</tr>
+<tr>
+<td><strong>Individual Bones</strong></td>
+<td>각각 독립 1뼈 체인 (액세서리 다수에 유용)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="chains-from-selection">Chains from Selection</h3>
+<ol>
+<li>포즈 모드에서 뼈 선택 — <strong>뿌리 뼈를 마지막에 클릭</strong></li>
+<li>버튼 클릭</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>동작</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Auto</strong></td>
+<td>경로가 있으면 체인, 없으면 개별 체인 자동 처리 (권장)</td>
+</tr>
+<tr>
+<td><strong>Chain to Active</strong></td>
+<td>활성 뼈 아래로 연결된 것만</td>
+</tr>
+<tr>
+<td><strong>Individual Bones</strong></td>
+<td>선택 뼈 각각 독립 체인</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>✅ <strong>뼈 1개만 선택해도 됩니다</strong>: 뼈를 딱 1개 선택하고 실행하면
+1뼈 체인(Start = End = 그 뼈)이 생성됩니다. 더 이상
+"No chain created" 경고가 나오지 않습니다. Auto 모드에서 활성(뿌리)
+뼈가 조용히 빠지던 문제도 수정되었습니다.</p>
+<p>💡 <strong>액세서리 여러 개 한 번에</strong>: 목걸이·귀걸이 뼈들을 전부 선택하고 Auto로
+실행하면 각자 개별 체인이 되어 한꺼번에 물리가 걸립니다.</p>
+</blockquote>
+<h3 id="detect-chains-automatically">Detect Chains Automatically</h3>
+<p>선택 없이 <strong>자식 없는 끝 뼈(팁)를 자동으로 찾아</strong> 연속 구간을 체인화.
+릭 구조를 몰라도 됩니다.</p>
+<table>
+<thead>
+<tr>
+<th>버튼</th>
+<th>역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Add Empty Chain</strong></td>
+<td>빈 체인 추가 (Start/End 수동 입력용)</td>
+</tr>
+<tr>
+<td><strong>Prune Invalid Chains</strong></td>
+<td>깨진 체인 일괄 정리</td>
+</tr>
+<tr>
+<td><strong>Copy Active Chain Settings</strong></td>
+<td>활성 체인 설정을 다른 모든 체인에 복사</td>
+</tr>
+<tr>
+<td><strong>Resolve From Start/End</strong></td>
+<td>Start/End 뼈 이름만으로 경로 자동 완성</td>
+</tr>
+<tr>
+<td><strong>Select Chain Bones</strong></td>
+<td>체인 뼈들을 뷰포트에서 선택</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="6-armature">6️⃣ Armature 섹션</h2>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable Armature</strong></td>
+<td>이 아머처 물리 ON/OFF</td>
+</tr>
+<tr>
+<td><strong>Mute Armature</strong></td>
+<td>일시 정지</td>
+</tr>
+<tr>
+<td><strong>Freeze (Post-Bake)</strong></td>
+<td>베이크 후 물리 중단 (결과 보존)</td>
+</tr>
+<tr>
+<td><strong>Show Bone Shapes</strong> ⭐</td>
+<td><strong>충돌 셰이퍼 표시</strong></td>
+</tr>
+<tr>
+<td><strong>Self Collision</strong></td>
+<td>체인 뼈들끼리 서로 밀어냄</td>
+</tr>
+</tbody>
+</table>
+<h3 id="show-bone-shapes">Show Bone Shapes — 충돌 셰이퍼 ⭐</h3>
+<video src="../assets/shapes.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="셰이퍼 표시"></video>
+<p><em>▲ 캡슐이 본 헤드~테일에 정확히 걸쳐서 함께 움직입니다. Radius를 올리면 지름이 커집니다</em></p>
+<p><strong>셰이퍼는 새 뼈가 아닙니다.</strong> 뼈의 충돌 범위를 <strong>눈으로 보여주는 시각화 메쉬</strong>입니다.</p>
+<ul>
+<li>Capsule / Cylinder / Box 중 선택</li>
+<li><strong>Radius</strong> = 충돌 두께 (뼈 길이 대비 비율 — 스케일 무관)</li>
+<li>재생 중에도 물리 뼈에 픽셀 단위로 정확히 부착</li>
+<li>Blender Simulation 엔진에서는 이 셰이퍼가 <strong>실제 충돌체</strong> 역할</li>
+<li>NovaSol 엔진에서도 이제 고른 Shape가 <strong>실제 충돌 볼륨</strong>으로 사용됩니다
+  (위 충돌 정밀 엔진 참고)</li>
+</ul>
+<blockquote>
+<p>💡 튜닝 절차: Show Bone Shapes ON → Radius 조절 → 캡슐이 몸에 살짝
+겹치는 지점이 "충돌 시작 지점"입니다.</p>
+</blockquote>
+<hr />
+<h2 id="7-chains">7️⃣ Chains (체인별 설정)</h2>
+<p>체인 박스의 <code>▼</code>를 눌러 펼칩니다.</p>
+<p><strong>체인 행 헤더</strong>: <code>[▼] [이름] [🎯선택] [✓ 시뮬ON/OFF] [🔇 음소거] [X 삭제]</code></p>
+<blockquote>
+<p>🎯 <strong>체인별 선택 버튼</strong> — 체인이 10~20개 이상 나열되어도 각 행의
+선택 버튼을 누르면 <strong>그 체인의 뼈만</strong> 뷰포트에서 선택되고, 동시에 그
+체인이 활성 체인이 됩니다(이어서 Preset/설정 복사를 누르면 클릭한 그
+체인에 적용). 어떤 체인이 어떤 뼈인지 더 이상 추측할 필요 없습니다.</p>
+</blockquote>
+<h3 id="motion">🎵 Motion (움직임 타입)</h3>
+<p><img alt="모션 비교" src="images/motion_compare.gif" />
+<em>▲ 위: Chain(부드럽게 복귀) / 아래: Spring(통통 출렁이며 복귀)</em></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Chain (Positional)</strong></td>
+<td>기본. 안정적인 위치 기반 물리. 오버슈트 없음. 안티킹크 스무딩 적용</td>
+</tr>
+<tr>
+<td><strong>Spring (Force)</strong></td>
+<td><strong>스프링 지글본</strong>. 통통 튀며 여러 번 출렁. 가방·가슴·배에 최적</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>Chain에서</th>
+<th>Spring에서</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Stiffness</strong></td>
+<td>목표 추적 강도</td>
+<td>스프링 상수 k</td>
+</tr>
+<tr>
+<td><strong>Damping</strong></td>
+<td>속도 감쇠</td>
+<td>속도 저항 c (낮을수록 오래 출렁)</td>
+</tr>
+<tr>
+<td><strong>Taper Along Chain</strong></td>
+<td>끝으로 갈수록 말랑 (ON 권장)</td>
+<td>동일</td>
+</tr>
+<tr>
+<td><strong>Influence</strong></td>
+<td>0=애니메이션, 1=물리, 중간=블렌딩. <strong>충돌 장면에서는 반드시 1.0</strong> — 최종 포즈가 (1−influence) 비율로 원본 애니와 섞이므로 0.34면 구를 뚫는 원본 포즈가 66%나 보입니다</td>
+<td>동일</td>
+</tr>
+<tr>
+<td><strong>Stretch</strong></td>
+<td>뼈 늘어남 허용치 (0.2 = ±10%). <strong>충돌 장면에선 0 권장</strong></td>
+<td>동일</td>
+</tr>
+<tr>
+<td><strong>Gravity / Mass</strong></td>
+<td>중력 배율 / 무게감</td>
+<td>동일</td>
+</tr>
+</tbody>
+</table>
+<h3 id="limits">📐 Limits</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cone Limit</strong></td>
+<td>뿌리 기준 최대 꺾임 각도</td>
+</tr>
+<tr>
+<td><strong>Per-Axis Limits</strong></td>
+<td>X/Z 축별 제한 (스커트 등)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bone-collision-shape">🥚 Bone Collision Shape</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+<th>접촉 장면 권장값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Shape</strong></td>
+<td>Capsule(권장) / Cylinder / Box — <strong>세 모양 모두 NovaSol에서 실제 형태로 충돌</strong></td>
+<td>Capsule</td>
+</tr>
+<tr>
+<td><strong>Radius</strong></td>
+<td>충돌 두께 (비율 — 스케일 무관)</td>
+<td>0.18~0.25</td>
+</tr>
+<tr>
+<td><strong>Enable Collision</strong></td>
+<td>이 체인의 충돌 ON/OFF</td>
+<td>ON</td>
+</tr>
+<tr>
+<td><strong>Margin</strong></td>
+<td>반경 바깥 여유 두께</td>
+<td>0.02~0.05</td>
+</tr>
+<tr>
+<td><strong>Friction</strong></td>
+<td>접촉 시 접선 속도 감쇠</td>
+<td>0.4~0.6</td>
+</tr>
+<tr>
+<td><strong>Bounce</strong></td>
+<td>접촉 반발</td>
+<td>0.05~0.15 (높으면 꺽임 재발)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="collision-engine">⚙️ Collision Engine</h3>
+<video src="../assets/collision_demo.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="충돌 데모"></video>
+<p><em>▲ NovaSol 충돌: 팔을 움직이면 머리카락이 몸에서 밀려납니다</em></p>
+<table>
+<thead>
+<tr>
+<th>Engine</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>NovaSol (Viewport)</strong></td>
+<td>내장 솔버가 실시간 밀어냄 — 볼륨 프로빙, 멀티 접촉, 스윕 CCD, 안티폴드, 안티킹크 전부 적용. <strong>Collide With</strong> = Mesh Object 또는 Collection</td>
+</tr>
+<tr>
+<td><strong>Blender Simulation</strong></td>
+<td>셰이퍼가 <strong>진짜 블렌더 충돌 오브젝트</strong>로 변신. 클로스·헤어 시뮬이 자동 충돌. 클로스/헤어 상호작용의 최고 정밀도 경로는 여전히 이쪽</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Blender Simulation Profile</strong>: Hair(얇은 껍질·저마찰) / Cloth(두꺼운 껍질·고감쇠) / Custom</p>
+<p><strong>External Targets</strong>: 본이 붙은 <strong>자기 옷이 아니라</strong> 상대 캐릭터·바닥·다른 의상 등
+<strong>외부 충돌체</strong> 지정. <code>Add GN Collider to Targets</code>로 공식 Collider 수정자 추가.</p>
+<blockquote>
+<p>⚠️ <strong>클로스 연동 순서</strong>: ① Show Bone Shapes ON ② 옷에 Cloth 수정자
+③ Cloth의 <strong>Cloth Collisions 체크</strong> ④ 재생</p>
+</blockquote>
+<h3 id="floating-head">🎈 Floating Head</h3>
+<p><code>Use Connect</code>가 꺼진 분리 뼈(장신구 등)의 <strong>머리 끝도 물리로 시뮬</strong>합니다.</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Simulate Head</strong></td>
+<td>헤드 시뮬 ON</td>
+</tr>
+<tr>
+<td><strong>Head Stiffness</strong></td>
+<td>원위치로 당기는 힘</td>
+</tr>
+<tr>
+<td><strong>Head Max Offset</strong></td>
+<td>최대 이탈 거리 (0 = 무제한)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="8-bake-reset">8️⃣ Bake &amp; Reset</h2>
+<p><img alt="베이크" src="images/bake.png" /></p>
+<table>
+<thead>
+<tr>
+<th>버튼</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bake NovaBone to Keyframes</strong></td>
+<td>재생 구간 전체를 시뮬해 <strong>키프레임으로 굽기</strong>. 게임 엔진 반출 필수. Preroll로 시작 전 안정화</td>
+</tr>
+<tr>
+<td><strong>Unfreeze All Armatures</strong></td>
+<td>베이크 후 Freeze 해제</td>
+</tr>
+<tr>
+<td><strong>Reset Physics (Active)</strong></td>
+<td>활성 아머처 물리 초기화</td>
+</tr>
+<tr>
+<td><strong>Reset All Physics</strong></td>
+<td>씬 전체 초기화</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_9">🎨 프리셋 가이드</h2>
+<table>
+<thead>
+<tr>
+<th>프리셋</th>
+<th>느낌</th>
+<th>용도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hair</strong></td>
+<td>부드럽게 흘러내림</td>
+<td>머리카락</td>
+</tr>
+<tr>
+<td><strong>Jelly</strong></td>
+<td>젤리 출렁임</td>
+<td>뚱한 장식</td>
+</tr>
+<tr>
+<td><strong>Cloth</strong></td>
+<td>천처럼 느슨</td>
+<td>스카프, 리본</td>
+</tr>
+<tr>
+<td><strong>Tail</strong></td>
+<td>둥글게 휘어짐</td>
+<td>꼬리</td>
+</tr>
+<tr>
+<td><strong>Accessory</strong></td>
+<td>단단하게 흔들림</td>
+<td>귀걸이, 목걸이</td>
+</tr>
+<tr>
+<td><strong>Antenna</strong></td>
+<td>거의 안 휘어짐</td>
+<td>안테나, 깃털</td>
+</tr>
+<tr>
+<td><strong>Jiggle</strong></td>
+<td>크게 처지고 출렁</td>
+<td>가슴, 배</td>
+</tr>
+<tr>
+<td><strong>Spring</strong> ⭐</td>
+<td>스프링처럼 통통</td>
+<td>스프링 지글본</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_10">📋 시나리오 레시피</h2>
+<details>
+<summary><b>👱 머리카락</b></summary>
+
+1. 머리 뼈 선택 (뿌리 마지막 클릭) → `Chains from Selection`
+2. Preset: **Hair**
+3. Show Bone Shapes ON → Radius 조절
+4. Collision: NovaSol + 몸통 메시 지정, **Influence 1.0**, Bounce 0.1, Margin 0.03
+5. 재생해서 팔이 머리를 스칠 때 밀려나는지 확인
+
+</details>
+
+<details>
+<summary><b>👝 액세서리 여러 개</b></summary>
+
+1. 액세서리 뼈 전체 선택 → `Chains from Selection` (Auto)
+2. 하나 튜닝 후 **Copy Active Chain Settings**로 전체 복사
+3. 각 행의 🎯 선택 버튼으로 어떤 체인이 어떤 뼈인지 바로 확인
+
+</details>
+
+<details>
+<summary><b>🎒 스프링 가방</b></summary>
+
+1. 가방 체인 생성 → Preset: **Spring**
+2. Shake & Play → 통통 출렁임 확인
+3. Damping ↑ = 빨리 잠잠
+
+</details>
+
+<details>
+<summary><b>🩳 스커트</b></summary>
+
+1. Prefix가 있으면 `Chains from Prefix`
+2. Preset: **Cloth**
+3. Cone Limit 60~70°
+4. Self Collision ON (치맛자락 겹침 방지)
+
+</details>
+
+<details>
+<summary><b>🧵 클로스 연동</b></summary>
+
+1. Engine = **Blender Simulation**, Profile = **Cloth**
+2. **Show Bone Shapes ON**
+3. 옷에 Cloth 수정자 → **Cloth Collisions 체크**
+4. 재생
+
+</details>
+
+<details>
+<summary><b>⛓️ 구/몸통 위에 체인 드레이프시키기 (접촉 튜닝)</b></summary>
+
+1. Influence **1.0**, Stretch **0**
+2. Bounce **0.05~0.15**, Friction **0.4~0.6**, Margin **0.03**
+3. Radius 0.18~0.25, Substeps 12
+4. 재생 — 체인이 표면을 따라 늘어져 미끄러져야 합니다. 접힘·꺽임 없이
+
+</details>
+
+<hr />
+<h2 id="_11">🔧 문제 해결</h2>
+<details>
+<summary><b>물리가 안 움직여요</b></summary>
+
+1. NovaBone Enabled / Enable Armature ON 확인
+2. Freeze OFF 확인
+3. **스페이스바 재생 중인지** (정지 시 물리도 멈춤 — 정상)
+4. Shake & Play 클릭 → 출렁이면 정상
+5. Diagnostics → 콘솔(`Window > Toggle System Console`) 확인
+
+</details>
+
+<details>
+<summary><b>NovaSol 충돌이 안 막혀요</b></summary>
+
+1. Enable Collision ON + 몸통 메시 지정 확인
+2. **Sim Influence 1.0 확인** — 낮으면 보이는 포즈가 원본 애니 쪽으로
+   되감겨서 메시를 뚫는 것처럼 보입니다
+3. Radius 0.2~0.3, Margin 0.02~0.05
+4. 패널 하단 `Collider failed: 이름` 표시 확인
+5. 빠른 움직임 → Substeps 10~16 (스윕 CCD도 자동 작동)
+
+</details>
+
+<details>
+<summary><b>접촉부 뼈 몇 개가 접히거나 꺽여요</b></summary>
+
+1. v1.0.0 솔버 사용 확인 (안티폴드 + 안티킹크 내장)
+2. Bounce 0.1로, Friction 0.4~0.6으로 낮추기
+3. Substeps 10~16 — 서브스텝당 파묻힘이 얕아져 접힘 방지 장치가
+   거의 발동하지 않아 더 부드럽습니다
+4. 설정 변경 후 Reset Physics
+
+</details>
+
+<details>
+<summary><b>클로스가 안 부딪혀요</b></summary>
+
+1. Show Bone Shapes ON 확인
+2. 옷의 Cloth 수정자에서 **Cloth Collisions 체크**
+3. Engine = Blender Simulation + Profile = Cloth
+
+</details>
+
+<details>
+<summary><b>뼈가 튀어요 / 밀려나요</b></summary>
+
+1. 물리 뼈에서 **컨스트레인트(IK 등) 제거** — 시뮬 뼈는 순수하게
+2. Reset Physics
+3. 비균준 오브젝트 스케일 지양
+
+</details>
+
+<details>
+<summary><b>Fix Bones(본 방향 교정)가 크래시 나거요 아무 것도 안 돼요</b></summary>
+
+1. v1.0.0 이상은 자식 뼈가 부모 머리 위에 정확히 얹힌 경우(언리얼
+   base_X/dyn_X 쌍)를 안전하게 처리합니다 — 크래시 대신
+   "child sits on the bone's head (left alone)"로 집계됩니다
+2. 실행 전 **Check**를 먼저 누르면 몇 개가 틀어졌고 왜 건너뛰었는지
+   목록으로 보여줍니다
+
+</details>
+
+<hr />
+<h2 id="faq">❓ FAQ</h2>
+<p><strong>Q. NovaShape_* 오브젝트는 뭔가요?</strong>
+충돌 범위 시각화입니다. Show Bone Shapes를 끄면 자동 삭제되며 렌더에는 항상 숨겨집니다.</p>
+<p><strong>Q. 게임 엔진으로 어떻게 가져가나요?</strong>
+<code>Bake NovaBone to Keyframes</code> 후 FBX 익스포트. 게임 엔진은 베이크된 애니를 재생합니다.</p>
+<p><strong>Q. 새 충돌 방식의 성능은?</strong>
+볼륨 프로빙은 뼈당 타깃당 최대 ~16회 구 쿼리로 제한되고, 멀티 접촉·CCD는
+<strong>접촉 프레임에만</strong> 추가 비용이 발생합니다. 패널 하단의 체인별 계산 시간(ms)을
+보면서 조절하고, 오르면 Substeps를 먼저 낮추세요 — 프로브 밀도가 좋아져서
+예전만큼 Substeps가 필요 없습니다.</p>
+<p><strong>Q. 뼈 1개짜리 액세서리도 되나요?</strong>
+됩니다. 이제 <code>Chains from Selection</code>에 뼈를 딱 1개만 선택해도 바로 1뼈
+체인이 생성됩니다. Individual 모드나 Detect Chains의 Include Single Bones도
+가능합니다.</p>
+<p><strong>Q. 어떤 체인이 어떤 뼈인지 어떻게 아나요?</strong>
+그 체인 행의 🎯 버튼을 누르세요 — 해당 뼈들이 뷰포트에서 선택되고 그
+체인이 활성화됩니다.</p>
+<hr />
+<h2 id="_12">📜 라이선스</h2>
+<div class="highlight"><pre><span></span><code>GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+</code></pre></div>
+<p>이 프로젝트는 Blender 표준 라이선스인 <strong>GPL-3.0</strong>을 따릅니다.
+전체 라이선스 전문은 <a href="./LICENSE">LICENSE</a> 파일을 참고하세요.</p>
+<hr />
+<p><strong>Made by Chamiseul</strong> 🦴</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

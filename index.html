@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="chamiseul" /><link rel="canonical" href="http://127.0.0/" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Welcome to NovaBone - NovaBone_Wiki</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Welcome to NovaBone";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = "/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> NovaBone_Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">NovaBone Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Welcome to NovaBone</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#whats-new-in-v110">🆕 What's New in v1.1.0</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#the-push-was-leaking-into-velocity">The push was leaking into velocity</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#kink-relief-was-undoing-the-collision">Kink relief was undoing the collision</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#push-direction">Push direction</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#deforming-colliders">Deforming colliders</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#also">Also</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#features">✨ Features</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#installation">📥 Installation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#quick-start-5-minutes">🚀 Quick Start (5 minutes)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#panel-layout">🧭 Panel Layout</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#1-novabone-enabled">1️⃣ NovaBone Enabled</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-novasol-solver">2️⃣ NovaSol Solver</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#collision-precision-engine-v100">🎯 Collision precision engine (v1.0.0)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-forces">3️⃣ Forces</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#gravity">Gravity</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#procedural-wind">Procedural Wind</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-unit-normalization">4️⃣ Unit Normalization ⭐</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-setup-tools">5️⃣ Setup Tools</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#bone-prefix-recommended-for-game-rigs">Bone Prefix — recommended for game rigs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#chains-from-selection">Chains from Selection</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#detect-chains-automatically">Detect Chains Automatically</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-armature-section">6️⃣ Armature Section</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#show-bone-shapes">Show Bone Shapes ⭐</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-chains">7️⃣ Chains</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#motion">🎵 Motion</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#limits">📐 Limits</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#bone-collision-shape">🥚 Bone Collision Shape</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#collision-engine">⚙️ Collision Engine</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#floating-head">🎈 Floating Head</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-bake-reset">8️⃣ Bake &amp; Reset</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#presets">🎨 Presets</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#recipes">📋 Recipes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#troubleshooting">🔧 Troubleshooting</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#faq">❓ FAQ</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#license">📜 License</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="https://mayalhc.github.io/GroomForge-Wiki/">All add-ons & guides</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">NovaBone_Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">NovaBone Guide</li>
+      <li class="breadcrumb-item active">Welcome to NovaBone</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="novabone-dynamics">🦴 NovaBone Dynamics</h1>
+<p><img alt="Main panel" src="assets/motionforge04.png" />
+<strong>Bone-chain physics simulation add-on</strong> — turn hair, tails, skirts,
+accessories and jiggle bones into automatic physics animation with a
+few clicks.</p>
+<p><strong>Author: Chamiseul</strong></p>
+<p>🇺🇸 English | <a href="KO_index/">🇰🇷 한국어</a></p>
+<hr />
+<h2 id="whats-new-in-v110">🆕 What's New in v1.1.0</h2>
+<p><strong>Bones no longer pop when they hit a collider</strong> — the jolt that showed up
+worst on the last bones of a chain. There were four separate causes, and
+all four are fixed.</p>
+<h3 id="the-push-was-leaking-into-velocity">The push was leaking into velocity</h3>
+<p>When a collision pushed a bone back out of a surface, that push was counted
+as if the bone had <strong>travelled there under its own power</strong>, and turned into
+velocity. Because it was divided by a single substep, even a tiny correction
+came back as a large speed.</p>
+<p>The symptom was distinctive: raising <strong>Substeps made it worse</strong>, not better
+(4 → 8 → 16 → 32 each roughly doubled the jolt). Refining the solve should
+never do that. Now the push only fixes position, and momentum is handled
+once, by bounce and friction.</p>
+<p>A welcome side effect: <strong>Friction does its actual job again.</strong> Setting it to
+0 used to make the simulation 20x rougher — not because the hair needed
+friction, but because friction was the only thing scrubbing off this
+injected speed. Set it for the feel you want now.</p>
+<h3 id="kink-relief-was-undoing-the-collision">Kink relief was undoing the collision</h3>
+<p>The anti-kink pass that straightens zig-zags in a chain ran <strong>after</strong>
+collision and re-checked nothing, so it blended resting bones back toward
+their neighbours — which meant back <strong>into</strong> the collider. The next substep
+pushed them out again. That push-pull loop, repeating every substep, was
+the popping.</p>
+<p>Bones that are <strong>in contact are now left where the collision put them.</strong>
+Free-hanging bones still get the kink relief.</p>
+<h3 id="push-direction">Push direction</h3>
+<p>Depth was measured to the closest point on the surface, but the push
+<strong>direction</strong> came from the nearest triangle's face normal — two different
+references. A face normal is a step function: it jumps the moment a
+different triangle becomes nearest. Measured while sliding along a
+collider, it swung up to 22.5° in a single step where the closest-point
+direction moved 1.1°. Subdividing the collider does not fix it, because the
+discontinuity sits at every face boundary regardless of face size.</p>
+<p>Depth and direction now come from the same place.</p>
+<h3 id="deforming-colliders">Deforming colliders</h3>
+<p>The biggest one. A collider that <strong>deforms</strong> — a character mesh driven by an
+armature and shape keys — moves its vertices while the object itself stays
+put, so the simulation believed the surface was <strong>standing still</strong>. It would
+push a bone clear, the surface would move into it again, and it would push
+again, frame after frame.</p>
+<p>The surface is now measured where it is actually touched: the face that
+answered the collision, compared against its own position last frame.</p>
+<h3 id="also">Also</h3>
+<ul>
+<li>Removed the add-on preferences panel. It held one checkbox that
+  did nothing and one internal safety value there was no reason to
+  touch; the latter is now a constant in the code.</li>
+</ul>
+<blockquote>
+<p>💡 No new settings. Existing scenes open unchanged, and scenes whose
+colliders do not move produce identical results.</p>
+</blockquote>
+<hr />
+<h2 id="features">✨ Features</h2>
+<ul>
+<li>✅ Pick a chain's start &amp; end — simulation just works</li>
+<li>✅ Scale-independent: identical motion on 1.0 Blender rigs and 0.01
+  Unreal-import rigs</li>
+<li>✅ Tune collision visually with live shaper overlays</li>
+<li>✅ <strong>Shape-accurate collision</strong>: Capsule / Cylinder / Box are probed as
+  real volumes (not just visuals) with multi-contact resolution and
+  sweep CCD anti-tunnelling</li>
+<li>✅ <strong>Stable contacts</strong>: anti-fold (no bone ever snaps inside-out) and
+  anti-kink (draped chains relax smoothly instead of zig-zagging)</li>
+<li>✅ Chain mode + Spring (jiggle) mode</li>
+<li>✅ Works as a collider for Blender cloth &amp; hair sims</li>
+<li>✅ Bake to keyframes for game-engine export</li>
+</ul>
+<p><em>▲ The NovaBone N-panel — every setting lives in this one place</em></p>
+<hr />
+<h2 id="installation">📥 Installation</h2>
+<ol>
+<li>Select the <strong>files inside</strong> the <code>novabone</code> folder and compress them to a zip<blockquote>
+<p>⚠️ Do NOT compress the folder itself — <code>blender_manifest.toml</code> must be
+   at the zip root.</p>
+</blockquote>
+</li>
+<li>Blender → <code>Edit &gt; Preferences &gt; Get Extensions</code></li>
+<li>Top-right <code>▼</code> → <strong>Install from Disk</strong> → pick the zip</li>
+<li><strong>Enable</strong> NovaBone</li>
+<li>In the 3D viewport press <code>N</code> → a <strong>NovaBone</strong> tab appears</li>
+</ol>
+<p><strong>Supported</strong>: Blender 4.2+ (tested on 5.0 / 5.2 LTS)</p>
+<hr />
+<h2 id="quick-start-5-minutes">🚀 Quick Start (5 minutes)</h2>
+<video src="assets/quickstart.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="Quick start flow"></video>
+<p><em>▲ Select bones → create chains → play. That's it.</em></p>
+<ol>
+<li>Select the armature, enter <strong>Pose Mode</strong></li>
+<li>Select the bones you want to simulate
+   (for a connected tail: <strong>click the ROOT bone last</strong>, Shift+click the rest)</li>
+<li>N-panel → <strong>Setup Tools</strong> → <code>Chains from Selection</code></li>
+<li>The bones sag slightly — success! Press <strong>Spacebar</strong> to play</li>
+<li>Move a body bone — the chain follows with physics 🎉</li>
+</ol>
+<blockquote>
+<p>💡 <strong>Shake &amp; Play</strong> kicks the bones AND starts playback automatically.
+If they jiggle, the engine is alive.</p>
+</blockquote>
+<hr />
+<h2 id="panel-layout">🧭 Panel Layout</h2>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>NovaBone Enabled</strong></td>
+<td>Master switch</td>
+</tr>
+<tr>
+<td><strong>NovaSol Solver</strong></td>
+<td>Quality &amp; test tools</td>
+</tr>
+<tr>
+<td><strong>Forces</strong></td>
+<td>Gravity &amp; wind</td>
+</tr>
+<tr>
+<td><strong>Unit Normalization</strong></td>
+<td>Rig-scale compensation</td>
+</tr>
+<tr>
+<td><strong>Setup Tools</strong></td>
+<td>Chain creation</td>
+</tr>
+<tr>
+<td><strong>Armature</strong></td>
+<td>Per-object settings</td>
+</tr>
+<tr>
+<td><strong>Chains</strong></td>
+<td>Per-chain physics</td>
+</tr>
+<tr>
+<td><strong>Bake &amp; Reset</strong></td>
+<td>Bake &amp; reset</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="1-novabone-enabled">1️⃣ NovaBone Enabled</h2>
+<p>The big button at the top. <strong>Physics only runs while ON.</strong> Auto-enabled
+when you create a chain. OFF = pure animation playback.</p>
+<hr />
+<h2 id="2-novasol-solver">2️⃣ NovaSol Solver</h2>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>Recommended</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Substeps</strong></td>
+<td>Physics slices per frame. Higher = smoother, stiffer AND fewer collision artefacts</td>
+<td>8 (10–16 for contact-heavy or fast scenes)</td>
+</tr>
+<tr>
+<td><strong>Iterations</strong></td>
+<td>Constraint relaxation passes</td>
+<td>3</td>
+</tr>
+<tr>
+<td><strong>Time Scale</strong></td>
+<td>Physics speed (2 = 2×, 0.5 = slow-mo)</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Simulate 1 Step</strong></td>
+<td>Advance exactly one frame's physics</td>
+</tr>
+<tr>
+<td><strong>Shake &amp; Play</strong></td>
+<td>Kick all bones AND start playback. Click again to stop</td>
+</tr>
+<tr>
+<td><strong>Diagnostics</strong></td>
+<td>Reports engine status &amp; hidden errors. <strong>Click this first when anything misbehaves</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Physics advances <strong>when the frame changes</strong>. Not moving while paused
+is normal.</p>
+</blockquote>
+<h3 id="collision-precision-engine-v100">🎯 Collision precision engine (v1.0.0)</h3>
+<p>NovaSol's collision is no longer a single sphere per bone. Every substep:</p>
+<ol>
+<li><strong>Volume probing</strong> — the chain's chosen Shape (Capsule / Cylinder /
+   Box) is sampled as a bounded set of sphere probes laid through its
+   REAL volume: spine points for capsules, lateral rings for cylinders,
+   corner offsets for boxes. Mid-bone leaks through walls and "Box
+   pushes round" are gone.</li>
+<li><strong>Multi-contact</strong> — up to 3 DISTINCT contacts (normals &gt; 60° apart):
+   the deepest at full strength, the others at 60%, so a bone resting
+   across a corner seats on BOTH walls instead of rattling on one.</li>
+<li><strong>Sweep CCD</strong> — a bone that moved more than half its collision radius
+   in one substep gets its PATH tested and is snapped back to the last
+   free station. Fast whips no longer tunnel through thin plates.</li>
+<li><strong>Anti-fold</strong> — every contact correction is budgeted (max 75% of the
+   bone's length per round) and direction-clamped (max 45° per round),
+   so a bone can never snap folded inside-out; it slides around the
+   surface over a few frames instead.</li>
+<li><strong>Anti-kink</strong> — after contacts resolve, each interior bone relaxes
+   15% toward its neighbours' average direction (Chain mode only), which
+   smooths the zig-zag a draped chain would otherwise keep. Bones that
+   are <strong>in contact are skipped</strong>, so this cannot undo the pose the
+   collision just settled (v1.1.0).</li>
+<li><strong>Residual re-check</strong> — any bone whose round was clamped or truncated
+   gets one extra query + a small outward push so the round always ends
+   OUTSIDE the surface. Clean frames pay none of this cost.</li>
+</ol>
+<blockquote>
+<p>💡 All of this is automatic — no new sliders. If the panel's
+<code>Solve xx ms</code> climbs, lower Substeps first; probe density already
+covers what extra substeps used to.</p>
+</blockquote>
+<hr />
+<h2 id="3-forces">3️⃣ Forces</h2>
+<h3 id="gravity">Gravity</h3>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Custom (Normalized)</strong></td>
+<td>Default. Direct vector input (default 0,0,-9.81). Scale-independent feel</td>
+</tr>
+<tr>
+<td><strong>Scene Gravity</strong></td>
+<td>Use the scene's gravity setting</td>
+</tr>
+<tr>
+<td><strong>Zero</strong></td>
+<td>No gravity</td>
+</tr>
+</tbody>
+</table>
+<h3 id="procedural-wind">Procedural Wind</h3>
+<video src="assets/wind.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="Wind sim"></video>
+<p><em>▲ Wind ON + playback = constantly swaying hair</em></p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Strength</strong></td>
+<td>Wind power (6–10 is clearly visible)</td>
+</tr>
+<tr>
+<td><strong>Direction</strong></td>
+<td>Wind direction</td>
+</tr>
+<tr>
+<td><strong>Turbulence</strong></td>
+<td>Gust randomness</td>
+</tr>
+<tr>
+<td><strong>Noise Scale</strong></td>
+<td>Pattern size — low = big waves, high = fine flutter</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 Enable wind if you want constant motion from playback alone.</p>
+</blockquote>
+<hr />
+<h2 id="4-unit-normalization">4️⃣ Unit Normalization ⭐</h2>
+<p>Solves the classic problem: <em>"Blender rigs have 1.0 bones, Unreal imports
+are 0.01 — the same values never match."</em> All physics runs in a space
+<strong>normalized by the reference bone length (L)</strong>, so identical values
+produce identical motion at any rig scale.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Auto Detect</strong></td>
+<td>Default. Uses the median chain-bone length. <strong>Leave it alone and you're done</strong></td>
+</tr>
+<tr>
+<td><strong>Manual</strong></td>
+<td>Type the reference length yourself</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Scale presets</strong>: one click on <code>Blender 1.0</code> or <code>Unreal 0.01</code>.</p>
+<video src="assets/unit_presets.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="Scale presets"></video>
+<p><em>▲ <code>Median bone length</code> below shows the auto-detected reference</em></p>
+<hr />
+<h2 id="5-setup-tools">5️⃣ Setup Tools</h2>
+<h3 id="bone-prefix-recommended-for-game-rigs">Bone Prefix — recommended for game rigs</h3>
+<p><img alt="Prefix chains" src="images/prefix_chains.png" />
+<em>▲ All dyn_ bones become chains in one click</em></p>
+<ol>
+<li>Enter a prefix in <strong>Prefix</strong> (default <code>dyn_</code>)</li>
+<li>Click <strong>Chains from Prefix</strong></li>
+<li>Every prefixed bone is chained automatically</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Group Chains</strong></td>
+<td>Connected dyn_ bones form one chain (recommended)</td>
+</tr>
+<tr>
+<td><strong>Individual Bones</strong></td>
+<td>Each dyn_ bone becomes its own 1-bone chain</td>
+</tr>
+</tbody>
+</table>
+<h3 id="chains-from-selection">Chains from Selection</h3>
+<ol>
+<li>Select bones in Pose Mode — <strong>click the ROOT bone last</strong></li>
+<li>Click the button</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Auto</strong></td>
+<td>Chain when a path exists, individual chain otherwise (recommended)</td>
+</tr>
+<tr>
+<td><strong>Chain to Active</strong></td>
+<td>Only bones parented under the active bone</td>
+</tr>
+<tr>
+<td><strong>Individual Bones</strong></td>
+<td>Every selected bone becomes its own chain</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>✅ <strong>Single bone works</strong>: selecting exactly ONE bone and running this
+creates a 1-bone chain (Start = End = that bone) — no more
+"No chain created" warning. The active (root) bone is also never
+silently dropped in Auto mode anymore.</p>
+<p>💡 <strong>Many accessories at once</strong>: select all necklace/earring bones and
+run Auto — each becomes an individual chain, all with physics.</p>
+</blockquote>
+<h3 id="detect-chains-automatically">Detect Chains Automatically</h3>
+<p>Finds leaf bones (no children) and chains the consecutive runs upward —
+no rig knowledge needed.</p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Add Empty Chain</strong></td>
+<td>Manual Start/End workflow</td>
+</tr>
+<tr>
+<td><strong>Prune Invalid Chains</strong></td>
+<td>Clean up chains referencing deleted bones</td>
+</tr>
+<tr>
+<td><strong>Copy Active Chain Settings</strong></td>
+<td>Copy the active chain's settings to all others</td>
+</tr>
+<tr>
+<td><strong>Resolve From Start/End</strong></td>
+<td>Fill a chain from just its Start/End bone names</td>
+</tr>
+<tr>
+<td><strong>Select Chain Bones</strong></td>
+<td>Select this chain's bones in the viewport</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="6-armature-section">6️⃣ Armature Section</h2>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable Armature</strong></td>
+<td>Physics ON/OFF for this armature</td>
+</tr>
+<tr>
+<td><strong>Mute Armature</strong></td>
+<td>Pause</td>
+</tr>
+<tr>
+<td><strong>Freeze (Post-Bake)</strong></td>
+<td>Stop physics after baking (preserves result)</td>
+</tr>
+<tr>
+<td><strong>Show Bone Shapes</strong> ⭐</td>
+<td><strong>Collision shaper overlay</strong></td>
+</tr>
+<tr>
+<td><strong>Self Collision</strong></td>
+<td>Chain bones push each other apart</td>
+</tr>
+</tbody>
+</table>
+<h3 id="show-bone-shapes">Show Bone Shapes ⭐</h3>
+<video src="assets/shapes.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="Shapers"></video>
+<p><em>▲ Capsules span each bone head-to-tail and move with it. Raising Radius grows the diameter</em></p>
+<p><strong>Shapers are NOT new bones</strong> — they visualize each bone's collision volume.</p>
+<ul>
+<li>Choose Capsule / Cylinder / Box</li>
+<li><strong>Radius</strong> = collision thickness (ratio to bone length — scale-free)</li>
+<li>Pixel-locked to the simulated bones during playback</li>
+<li>In Blender Simulation engine mode, shapers ARE the real collision objects</li>
+<li>In NovaSol mode the chosen shape now also drives the ACTUAL collision
+  volume (see Collision precision engine above)</li>
+</ul>
+<blockquote>
+<p>💡 Tuning: Show Bone Shapes ON → adjust Radius → where the capsule
+slightly overlaps the body is where collision begins.</p>
+</blockquote>
+<hr />
+<h2 id="7-chains">7️⃣ Chains</h2>
+<p>Expand each chain with its <code>▼</code> arrow.</p>
+<p><strong>Chain row header</strong>: <code>[▼] [name] [🎯 Select] [✓ enable] [🔇 mute] [X]</code></p>
+<blockquote>
+<p>🎯 <strong>Per-chain Select button</strong> — with 10–20+ chains listed, press a
+row's select button to highlight exactly THAT chain's bones in the
+viewport AND make it the active chain (Preset / Copy Settings then act
+on what you clicked). No more guessing which chain owns which bones.</p>
+</blockquote>
+<h3 id="motion">🎵 Motion</h3>
+<p><img alt="Motion comparison" src="images/motion_compare.gif" />
+<em>▲ Top: Chain (smooth return) / Bottom: Spring (bouncy overshoot)</em></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Chain (Positional)</strong></td>
+<td>Default. Stable positional physics, no overshoot. Gets the anti-kink smoothing pass</td>
+</tr>
+<tr>
+<td><strong>Spring (Force)</strong></td>
+<td><strong>Spring jiggle bone</strong> — bounces and oscillates. Ideal for bags, chest, belly</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>In Chain</th>
+<th>In Spring</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Stiffness</strong></td>
+<td>Goal-tracking strength</td>
+<td>Spring constant k</td>
+</tr>
+<tr>
+<td><strong>Damping</strong></td>
+<td>Velocity loss</td>
+<td>Velocity resistance c (lower = longer wobble)</td>
+</tr>
+<tr>
+<td><strong>Taper Along Chain</strong></td>
+<td>Softer toward the tip (ON recommended)</td>
+<td>Same</td>
+</tr>
+<tr>
+<td><strong>Influence</strong></td>
+<td>0 = animation, 1 = physics. <strong>For collision scenes keep this at 1.0</strong> — the visible pose is blended with the raw animation at (1 − influence), so 0.34 shows 66% of the un-simulated (through-mesh) pose</td>
+<td>Same</td>
+</tr>
+<tr>
+<td><strong>Stretch</strong></td>
+<td>Allowed bone stretch (0.2 = ±10%). <strong>0 recommended for collision scenes</strong></td>
+<td>Same</td>
+</tr>
+<tr>
+<td><strong>Gravity / Mass</strong></td>
+<td>Multiplier / weight</td>
+<td>Same</td>
+</tr>
+</tbody>
+</table>
+<h3 id="limits">📐 Limits</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cone Limit</strong></td>
+<td>Max bend angle from the root direction</td>
+</tr>
+<tr>
+<td><strong>Per-Axis Limits</strong></td>
+<td>Separate X/Z limits (skirts etc.)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bone-collision-shape">🥚 Bone Collision Shape</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>Recommended (contact scenes)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Shape</strong></td>
+<td>Capsule (recommended) / Cylinder / Box — <strong>all three are now shape-accurate in NovaSol</strong></td>
+<td>Capsule</td>
+</tr>
+<tr>
+<td><strong>Radius</strong></td>
+<td>Collision thickness (scale-free ratio)</td>
+<td>0.18–0.25</td>
+</tr>
+<tr>
+<td><strong>Enable Collision</strong></td>
+<td>This chain's collision ON/OFF</td>
+<td>ON</td>
+</tr>
+<tr>
+<td><strong>Margin</strong></td>
+<td>Surface slack added around the radius</td>
+<td>0.02–0.05</td>
+</tr>
+<tr>
+<td><strong>Friction</strong></td>
+<td>Tangential velocity killed on contact</td>
+<td>0.4–0.6</td>
+</tr>
+<tr>
+<td><strong>Bounce</strong></td>
+<td>Reflection on contact</td>
+<td>0.05–0.15 (high bounce re-creates kinks)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="collision-engine">⚙️ Collision Engine</h3>
+<video src="assets/collision_demo.mp4" autoplay loop muted playsinline style="width:100%;border-radius:6px" title="Collision demo"></video>
+<p><em>▲ NovaSol collision: moving the arm pushes the hair away from the body</em></p>
+<table>
+<thead>
+<tr>
+<th>Engine</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>NovaSol (Viewport)</strong></td>
+<td>Built-in solver pushes bones out in real time with volume probing, multi-contact, sweep CCD, anti-fold and anti-kink (see Solver section). <strong>Collide With</strong> = a mesh object or a collection</td>
+</tr>
+<tr>
+<td><strong>Blender Simulation</strong></td>
+<td>Shapers become <strong>real Blender collision objects</strong> — cloth &amp; hair sims hit them automatically. Still the maximum-fidelity path for Cloth/Hair interplay</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Blender Simulation Profile</strong>: Hair (thin shells, low friction) /
+Cloth (thick shells, high damping) / Custom</p>
+<p><strong>External Targets</strong>: colliders that are NOT the cloth these bones belong
+to — other characters, floors, other garments. Use
+<code>Add GN Collider to Targets</code> to add the official Collider modifier.</p>
+<blockquote>
+<p>⚠️ <strong>Cloth integration order</strong>: ① Show Bone Shapes ON ② add a Cloth
+modifier to the garment ③ check <strong>Cloth Collisions</strong> on the cloth
+④ play</p>
+</blockquote>
+<h3 id="floating-head">🎈 Floating Head</h3>
+<p>Simulates the head point of detached bones (<code>Use Connect</code> off) too.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Simulate Head</strong></td>
+<td>Enable head simulation</td>
+</tr>
+<tr>
+<td><strong>Head Stiffness</strong></td>
+<td>Pull back toward the animated position</td>
+</tr>
+<tr>
+<td><strong>Head Max Offset</strong></td>
+<td>Max drift from rest (0 = unlimited)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="8-bake-reset">8️⃣ Bake &amp; Reset</h2>
+<p><img alt="Bake" src="images/bake.png" /></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bake NovaBone to Keyframes</strong></td>
+<td>Simulate the playback range and <strong>bake to keyframes</strong> — required before game-engine export. Preroll stabilizes first</td>
+</tr>
+<tr>
+<td><strong>Unfreeze All Armatures</strong></td>
+<td>Unfreeze post-bake armatures</td>
+</tr>
+<tr>
+<td><strong>Reset Physics (Active)</strong></td>
+<td>Reset the active armature's physics</td>
+</tr>
+<tr>
+<td><strong>Reset All Physics</strong></td>
+<td>Reset the whole scene</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="presets">🎨 Presets</h2>
+<table>
+<thead>
+<tr>
+<th>Preset</th>
+<th>Feel</th>
+<th>Use for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hair</strong></td>
+<td>Soft flowing</td>
+<td>Hair</td>
+</tr>
+<tr>
+<td><strong>Jelly</strong></td>
+<td>Wobbly</td>
+<td>Chunky trinkets</td>
+</tr>
+<tr>
+<td><strong>Cloth</strong></td>
+<td>Loose fabric</td>
+<td>Scarves, ribbons</td>
+</tr>
+<tr>
+<td><strong>Tail</strong></td>
+<td>Rounded swing</td>
+<td>Tails</td>
+</tr>
+<tr>
+<td><strong>Accessory</strong></td>
+<td>Firm swing</td>
+<td>Earrings, necklaces</td>
+</tr>
+<tr>
+<td><strong>Antenna</strong></td>
+<td>Barely bends</td>
+<td>Antennas, feathers</td>
+</tr>
+<tr>
+<td><strong>Jiggle</strong></td>
+<td>Heavy sag &amp; wobble</td>
+<td>Chest, belly</td>
+</tr>
+<tr>
+<td><strong>Spring</strong> ⭐</td>
+<td>Bouncy overshoot</td>
+<td>Spring jiggle bones</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="recipes">📋 Recipes</h2>
+<details>
+<summary><b>👱 Hair</b></summary>
+
+1. Select hair bones (root last) → `Chains from Selection`
+2. Preset: **Hair**
+3. Show Bone Shapes ON → adjust Radius
+4. Collision: NovaSol + body mesh, **Influence 1.0**, Bounce 0.1, Margin 0.03
+5. Play — the hair should slide off the arm
+
+</details>
+
+<details>
+<summary><b>👝 Multiple accessories</b></summary>
+
+1. Select all accessory bones → `Chains from Selection` (Auto)
+2. Tune one → **Copy Active Chain Settings**
+3. Use each row's 🎯 select button to find which bones belong to which chain
+
+</details>
+
+<details>
+<summary><b>🎒 Spring bag</b></summary>
+
+1. Create the bag chain → Preset: **Spring**
+2. Shake & Play → check the bounce
+3. Raise Damping to settle faster
+
+</details>
+
+<details>
+<summary><b>🩳 Skirt</b></summary>
+
+1. `Chains from Prefix` if you use one
+2. Preset: **Cloth**
+3. Cone Limit 60–70°
+4. Self Collision ON (prevents panel overlap)
+
+</details>
+
+<details>
+<summary><b>🧵 Cloth integration</b></summary>
+
+1. Engine = **Blender Simulation**, Profile = **Cloth**
+2. **Show Bone Shapes ON**
+3. Cloth modifier on the garment → check **Cloth Collisions**
+4. Play
+
+</details>
+
+<details>
+<summary><b>⛓️ Draping a chain over a sphere/body (contact tuning)</b></summary>
+
+1. Influence **1.0**, Stretch **0**
+2. Bounce **0.05–0.15**, Friction **0.4–0.6**, Margin **0.03**
+3. Radius 0.18–0.25, Substeps 12
+4. Play — the chain should drape and slide, no folding, no kinks
+
+</details>
+
+<hr />
+<h2 id="troubleshooting">🔧 Troubleshooting</h2>
+<details>
+<summary><b>Physics doesn't move at all</b></summary>
+
+1. NovaBone Enabled / Enable Armature are ON
+2. Freeze is OFF
+3. **Is playback running?** (paused = physics paused — by design)
+4. Click Shake & Play — if it jiggles, the engine is fine
+5. Diagnostics → check the System Console
+
+</details>
+
+<details>
+<summary><b>NovaSol collision doesn't block</b></summary>
+
+1. Enable Collision ON + body mesh assigned
+2. **Sim Influence at 1.0** — at lower values the visible pose is
+   blended back toward the raw animation, which may pass through the mesh
+3. Radius 0.2–0.3, Margin 0.02–0.05
+4. Check for red `Collider failed: name` at the panel bottom
+5. Fast motion → Substeps 10–16 (sweep CCD also engages automatically)
+
+</details>
+
+<details>
+<summary><b>A few bones fold / collapse at the contact zone</b></summary>
+
+1. Update to the v1.0.0 solver (anti-fold + anti-kink built in)
+2. Bounce down to 0.1, Friction to 0.4–0.6
+3. Substeps 10–16 — shallower per-step sinks mean the fold guards
+   rarely engage and motion stays smooth
+4. Reset Physics after changing settings
+
+</details>
+
+<details>
+<summary><b>Cloth doesn't collide</b></summary>
+
+1. Show Bone Shapes ON
+2. Check **Cloth Collisions** on the cloth modifier
+3. Engine = Blender Simulation + Profile = Cloth
+
+</details>
+
+<details>
+<summary><b>Bones snap / drift away</b></summary>
+
+1. **Remove constraints (IK etc.) from simulated bones**
+2. Reset Physics
+3. Avoid non-uniform object scale
+
+</details>
+
+<details>
+<summary><b>Fix Bones (orientation) crashes or does nothing</b></summary>
+
+1. v1.0.0+ handles bones whose child sits exactly ON the bone's head
+   (Unreal base_X/dyn_X pairs) — they are reported as
+   "child sits on the bone's head (left alone)" instead of crashing
+2. Use **Check** first — it lists how many bones are off and why
+   any were skipped
+
+</details>
+
+<hr />
+<h2 id="faq">❓ FAQ</h2>
+<p><strong>Q. What are the NovaShape_* objects?</strong>
+Collision-volume visualizations. They're removed when Show Bone Shapes is
+turned off and always hidden from renders.</p>
+<p><strong>Q. How do I get this into a game engine?</strong>
+<code>Bake NovaBone to Keyframes</code>, then export FBX. Game engines replay the
+baked animation.</p>
+<p><strong>Q. Performance with the new collision?</strong>
+Volume probing is bounded (≤ ~16 sphere queries per bone per target,
+multi-contact and CCD only cost extra ON contact frames). Watch the
+per-chain solve time (ms) at the panel bottom; if it climbs, lower
+Substeps — probe density already covers what extra substeps used to.</p>
+<p><strong>Q. Single-bone accessories?</strong>
+Yes — <code>Chains from Selection</code> with exactly one bone now creates a 1-bone
+chain directly. Or use Individual mode, or enable Include Single Bones in
+Detect Chains.</p>
+<p><strong>Q. Which chain owns which bones?</strong>
+Press the 🎯 button on that chain's row — its bones light up in the
+viewport and it becomes the active chain.</p>
+<hr />
+<h2 id="license">📜 License</h2>
+<div class="highlight"><pre><span></span><code>GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+</code></pre></div>
+<p>This project is licensed under <strong>GPL-3.0</strong>, the standard Blender license.
+See the <a href="./LICENSE">LICENSE</a> file for the full text.</p>
+<hr />
+<p><strong>Made by Chamiseul</strong> 🦴</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
